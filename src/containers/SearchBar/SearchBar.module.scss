@@ -1,0 +1,17 @@
+@import "../../variables";
+
+.searchbar {
+  form {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 3rem;
+
+    input {
+      margin: 0.5rem 0 1rem 0;
+      border-radius: 10px;
+      border: 2px solid $btn-border-color;
+      padding: 0.5rem;
+      font-weight: bold;
+    }
+  }
+}

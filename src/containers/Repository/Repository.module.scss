@@ -1,0 +1,43 @@
+@import '../../variables.scss';
+
+.repository {
+  border-radius: 20px;
+  box-shadow: 0.2rem 0.2rem 1rem $box-shadow-color;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  transition: 0.3s;
+
+  &:hover {
+    box-shadow: 0.2rem 0.2rem 1rem $box-shadow-color-hover;
+  }
+
+  &__top-bar {
+    @media screen and (min-width: $screen-small) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__title {
+    margin: 0 1rem 0 0;
+  }
+
+  &__icon {
+    width: 0.7rem;
+    margin: 0 0.2rem;
+    transition: 0.3s;
+
+    &--opener {
+      vertical-align: middle;
+      padding: 2px;
+    }
+
+    &--rotated {
+      transform: rotate(-180deg);
+    }
+  }
+
+  &__description {
+    margin: 0 0 0.5rem;
+  }
+}

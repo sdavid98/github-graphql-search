@@ -1,0 +1,40 @@
+@import "../../variables";
+
+.issue-state-select {
+  display: grid;
+  grid-template-columns: 4.5rem 4.5rem;
+  grid-gap: 1rem;
+  margin: 0.5rem 0;
+  
+  input {
+    display: none;
+    
+    &:checked + label {
+      background-color: $btn-active-bg-color;
+      color: #ffffff;
+    }
+  }
+  
+  label {
+    border: 2px solid $btn-border-color;
+    border-radius: 10px;
+    padding: 3px 6px;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+}
+
+.issue {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid $issue-border-color;
+
+  &:hover {
+    background-color: $issue-hover-bg-color;
+  }
+
+  span {
+    font-size: 0.7rem;
+  }
+}
